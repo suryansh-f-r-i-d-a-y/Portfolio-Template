@@ -1,0 +1,38 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html , body {
+  height: 100%;
+  width: 100%;
+}
+
+body{
+  background: black;
+}
+
+.background-object{
+  height: 70vh;
+  width: 70vh;
+  background: rgb(255, 0, 255);
+  border-radius: 50%;
+  position: fixed;
+  top: -35vh;
+  left: calc((100vw - 70vh) / 2);
+  animation:  expandContract 7s ease-in-out infinite;
+}
+
+
+@keyframes expandContract {
+  0% , 100%{
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+}
+
+
+
